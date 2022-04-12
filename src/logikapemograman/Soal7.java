@@ -5,7 +5,7 @@
  */
 package logikapemograman;
 
-import java.util.Scanner;
+
 
 /**
  *
@@ -13,32 +13,16 @@ import java.util.Scanner;
  */
 public class Soal7 {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+    int [] array = new int [] {1,7,3,4,9,4,3,3};
         
-        System.out.print("Masukkan jumlah elemen array : ");
-        int jumlah = scanner.nextInt();
+        System.out.print("Angka yang sama: ");
         
-        int[] arr;
-        arr = new int[jumlah];
-        
-        System.out.println("Masukkan angka sesuai elemen yang sudah dimasukkan pada sebelumnya : ");
-        for(int i=0; i<jumlah; i++){
-            System.out.print("Angka ke-"+ (i+1)+"= ");
-            arr[i] = scanner.nextInt();
-        }
-        
-        int angka=arr[0];
-        for(int a=0; a<arr.length; a++){
-            if(arr.length == angka){
-                System.out.println("ADA");
-            }else if(arr.length != angka){
-                System.out.println("TIDAK");
-            }
-                
-            
-        }
-
-    }
-
+        for(int i = 0; i < array.length; i++) {  
+            for(int j = i + 1; j < array.length; j++) {  
+                if(array[i] == array[j])  
+                    System.out.println(array[j]);  
+            }  
+        }  
     
+    }
 }

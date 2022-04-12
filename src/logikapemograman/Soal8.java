@@ -11,6 +11,20 @@ package logikapemograman;
  */
 public class Soal8 {
     public static void main(String[] args){
+        String[] buah = {"Durian","Apel", "Mangga", "Jeruk", "Pepaya"};
+        int[] terjual = {10,10,20,30,40};
+        
+        int max = terjual[0];
+        int temp =0;
+        
+        for(int i=0; i<terjual.length; i++){
+            if(terjual[i] > max){
+                max = terjual[i];
+                temp=i;
+            }
+        }
+        
+        
         
     }
     
