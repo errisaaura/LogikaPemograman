@@ -13,7 +13,8 @@ package logikapemograman;
  */
 public class Soal7 {
     public static void main(String[] args){
-    int [] array = new int [] {1,7,3,4,9,4,3,3};
+        System.out.println("=====MENENTUKAN NILAI YANG SAMA DALAM ARRAY=====");
+    int [] array = new int [] {1,7,3,4,9,9,5};
         
         System.out.print("Angka yang sama: ");
         
